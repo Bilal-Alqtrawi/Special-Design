@@ -60,8 +60,8 @@ settingsBtn.onclick = function (e) {
 document.addEventListener("click", (e) => {
   console.log(e.target);
   if (e.target != settingsBtn && e.target !== settingsSideBar) {
-    settingsBtn.classList.toggle("fa-spin");
-    settingsSideBar.classList.toggle("open");
+    settingsBtn.classList.remove("fa-spin");
+    settingsSideBar.classList.remove("open");
   }
 });
 settingsSideBar.onclick = function (e) {
