@@ -52,22 +52,10 @@ backgroundInterval = setInterval(randomaizeImgs, 10000, imgsArray);
 
 // Toggle Spin Class On Icon
 let settingsBtn = document.querySelector(".toggle-settings .settings-icon");
-settingsBtn.onclick = function (e) {
-  e.stopPropagation();
+settingsBtn.onclick = function (e) {]
   this.classList.toggle("fa-spin");
   settingsSideBar.classList.toggle("open");
 };
-document.addEventListener("click", (e) => {
-  console.log(e.target);
-  if (e.target != settingsBtn && e.target !== settingsSideBar) {
-    settingsBtn.classList.remove("fa-spin");
-    settingsSideBar.classList.remove("open");
-  }
-});
-settingsSideBar.onclick = function (e) {
-  e.stopPropagation();
-};
-
 // Switch colors
 const colorsLi = document.querySelectorAll(".colors-list li");
 
