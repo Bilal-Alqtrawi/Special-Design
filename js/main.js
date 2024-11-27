@@ -52,7 +52,7 @@ backgroundInterval = setInterval(randomaizeImgs, 10000, imgsArray);
 
 // Toggle Spin Class On Icon
 let settingsBtn = document.querySelector(".toggle-settings .settings-icon");
-settingsBtn.onclick = function (e) {]
+settingsBtn.onclick = function (e) {
   this.classList.toggle("fa-spin");
   settingsSideBar.classList.toggle("open");
 };
